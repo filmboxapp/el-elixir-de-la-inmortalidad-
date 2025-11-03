@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FILMBOX</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 16px;
+    }
+
+    /* VIDEO */
+    .video-container {
+      background: #000;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    /* INFO */
+    .info-box {
+      background: #111;
+      border-radius: 16px;
+      padding: 16px;
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start; /* 🔥 hace que el título comience arriba */
+    }
+
+    .poster {
+      width: 100px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      flex-shrink: 0;
+    }
+
+    .details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .details h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.2rem;
+      line-height: 1.3em;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+
+    .icons {
+      display: flex;
+      gap: 16px;
+      margin-top: 4px;
+      color: #ccc;
+      font-size: 0.9rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .icon-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .icon-item svg {
+      width: 18px;
+      height: 18px;
+      fill: #e50914;
+      flex-shrink: 0;
+    }
+
+    /* SINOPSIS */
+    .synopsis {
+      background: #111;
+      border-radius: 16px;
+      padding: 16px;
+      margin-top: 16px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- VIDEO -->
+    <div class="video-container" id="video-container">
+      <iframe id="videoPlayer" src="https://pruebasfilmbox.blogspot.com/?player=fluidplayer&provider=rand&format=video/mp4&link=https://hugh.cdn.rumble.cloud/video/fww1/26/s8/2/C/K/b/t/CKbtz.aaa.mp4&m=1" allowfullscreen></iframe>
+    </div>
+
+    <!-- INFO -->
+    <div class="info-box">
+      <img src="https://image.tmdb.org/t/p/original/eAvV8ITNS4M8Zt8sxOK6g3XBLBr.jpg" alt="Poster" class="poster">
+      <div class="details">
+        <h2>EL ELIXIR DE LA INMORTALIDAD</h2>
+        <div class="icons">
+          <div class="icon-item">
+            <!-- Calendar -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 16H5V10h14v10ZM5 8V6h14v2H5Z"/></svg>
+            <span>2025</span>
+          </div>
+
+          <div class="icon-item">
+            <!-- Clock -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm0 2a10 10 0 1 1 0-20 10 10 0 0 1 0 20Zm.5-10V7h-1.5v6h5v-1.5Z"/></svg>
+            <span>1h 58 min</span>
+          </div>
+
+          <div class="icon-item">
+            <!-- Star -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 17.27 6.18 3.73-1.64-7.03L21 9.24l-7.19-.61L12 2 10.19 8.63 3 9.24l4.46 4.73L5.82 21Z"/></svg>
+            <span>6.7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SINOPSIS -->
+    <div class="synopsis">
+      Un elixir desata a los muertos vivientes en una aldea. Una familia enfrentada entre sí debe unirse y luchar por sobrevivir mientras su pueblo natal se derrumba.
+    </div>
+
+  </div>
+
+</body>
+</html>
